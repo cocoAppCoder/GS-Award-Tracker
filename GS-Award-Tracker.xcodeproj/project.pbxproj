@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62ABA48828B2B83100AFAE45 /* DML+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ABA48628B2B83000AFAE45 /* DML+CoreDataClass.swift */; };
+		62ABA48928B2B83100AFAE45 /* DML+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ABA48728B2B83100AFAE45 /* DML+CoreDataProperties.swift */; };
+		62AD083D28AC64BE0076B88A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AD083C28AC64BE0076B88A /* ResultViewController.swift */; };
 		62D7272728AAC20E00D46006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D7272628AAC20E00D46006 /* AppDelegate.swift */; };
 		62D7272928AAC20E00D46006 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D7272828AAC20E00D46006 /* SceneDelegate.swift */; };
-		62D7272B28AAC20E00D46006 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D7272A28AAC20E00D46006 /* ViewController.swift */; };
+		62D7272B28AAC20E00D46006 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D7272A28AAC20E00D46006 /* StartViewController.swift */; };
 		62D7272E28AAC20E00D46006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62D7272C28AAC20E00D46006 /* Main.storyboard */; };
 		62D7273128AAC20E00D46006 /* GS_Award_Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62D7272F28AAC20E00D46006 /* GS_Award_Tracker.xcdatamodeld */; };
 		62D7273328AAC20F00D46006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62D7273228AAC20F00D46006 /* Assets.xcassets */; };
@@ -17,6 +20,7 @@
 		62D7274128AAC21000D46006 /* GS_Award_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D7274028AAC21000D46006 /* GS_Award_TrackerTests.swift */; };
 		62D7274B28AAC21000D46006 /* GS_Award_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D7274A28AAC21000D46006 /* GS_Award_TrackerUITests.swift */; };
 		62D7274D28AAC21000D46006 /* GS_Award_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D7274C28AAC21000D46006 /* GS_Award_TrackerUITestsLaunchTests.swift */; };
+		62D7275A28AAC2DE00D46006 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D7275928AAC2DE00D46006 /* TimeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		62ABA48628B2B83000AFAE45 /* DML+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DML+CoreDataClass.swift"; sourceTree = "<group>"; };
+		62ABA48728B2B83100AFAE45 /* DML+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DML+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		62AD083C28AC64BE0076B88A /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		62D7272328AAC20E00D46006 /* GS-Award-Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GS-Award-Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D7272628AAC20E00D46006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62D7272828AAC20E00D46006 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		62D7272A28AAC20E00D46006 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		62D7272A28AAC20E00D46006 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		62D7272D28AAC20E00D46006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62D7273028AAC20E00D46006 /* GS_Award_Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GS_Award_Tracker.xcdatamodel; sourceTree = "<group>"; };
 		62D7273228AAC20F00D46006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +58,7 @@
 		62D7274628AAC21000D46006 /* GS-Award-TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GS-Award-TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62D7274A28AAC21000D46006 /* GS_Award_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GS_Award_TrackerUITests.swift; sourceTree = "<group>"; };
 		62D7274C28AAC21000D46006 /* GS_Award_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GS_Award_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		62D7275928AAC2DE00D46006 /* TimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		625204752A43C853005D9B6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62D7272C28AAC20E00D46006 /* Main.storyboard */,
+				62D7273428AAC20F00D46006 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		625204762A43C860005D9B6B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				62D7275928AAC2DE00D46006 /* TimeTableViewController.swift */,
+				62AD083C28AC64BE0076B88A /* ResultViewController.swift */,
+				62D7272A28AAC20E00D46006 /* StartViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		62AD083B28AC60640076B88A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62ABA48628B2B83000AFAE45 /* DML+CoreDataClass.swift */,
+				62ABA48728B2B83100AFAE45 /* DML+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		62D7271A28AAC20E00D46006 = {
 			isa = PBXGroup;
 			children = (
@@ -101,12 +137,12 @@
 		62D7272528AAC20E00D46006 /* GS-Award-Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				625204762A43C860005D9B6B /* Controller */,
+				625204752A43C853005D9B6B /* View */,
+				62AD083B28AC60640076B88A /* Model */,
 				62D7272628AAC20E00D46006 /* AppDelegate.swift */,
 				62D7272828AAC20E00D46006 /* SceneDelegate.swift */,
-				62D7272A28AAC20E00D46006 /* ViewController.swift */,
-				62D7272C28AAC20E00D46006 /* Main.storyboard */,
 				62D7273228AAC20F00D46006 /* Assets.xcassets */,
-				62D7273428AAC20F00D46006 /* LaunchScreen.storyboard */,
 				62D7273728AAC20F00D46006 /* Info.plist */,
 				62D7272F28AAC20E00D46006 /* GS_Award_Tracker.xcdatamodeld */,
 			);
@@ -262,9 +298,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				62D7273128AAC20E00D46006 /* GS_Award_Tracker.xcdatamodeld in Sources */,
-				62D7272B28AAC20E00D46006 /* ViewController.swift in Sources */,
+				62D7275A28AAC2DE00D46006 /* TimeTableViewController.swift in Sources */,
+				62AD083D28AC64BE0076B88A /* ResultViewController.swift in Sources */,
+				62D7272B28AAC20E00D46006 /* StartViewController.swift in Sources */,
 				62D7272728AAC20E00D46006 /* AppDelegate.swift in Sources */,
 				62D7272928AAC20E00D46006 /* SceneDelegate.swift in Sources */,
+				62ABA48928B2B83100AFAE45 /* DML+CoreDataProperties.swift in Sources */,
+				62ABA48828B2B83100AFAE45 /* DML+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,13 +479,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MZTYS99T33;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "GS-Award-Tracker/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -466,13 +509,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MZTYS99T33;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "GS-Award-Tracker/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
