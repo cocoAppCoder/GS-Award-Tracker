@@ -50,6 +50,9 @@ class TimeTableViewController : UIViewController {
         if ( (Int64(minutesEntryText) ?? 0 >= 1440) ) {
             invalidTimeLabel.isHidden = false
         }
+        else if ( Int64(minutesEntryText) == nil ) {
+            invalidTimeLabel.isHidden = false
+        }
         else
         {
             invalidTimeLabel.isHidden = true
