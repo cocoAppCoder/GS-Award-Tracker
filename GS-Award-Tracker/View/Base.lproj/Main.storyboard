@@ -121,8 +121,9 @@
                                                         <color key="textColor" red="0.82580369710000001" green="0.45165193079999999" blue="0.38442403079999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NM7-h2-qOd">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NM7-h2-qOd">
                                                         <rect key="frame" x="0.0" y="482.5" width="398" height="88.5"/>
+                                                        <color key="backgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -236,71 +237,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNM-nV-Kx1">
-                                <rect key="frame" x="0.0" y="181" width="414" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.98023194069999997" green="0.88734507559999998" blue="0.68666714429999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" red="0.82580369710000001" green="0.45165193079999999" blue="0.38442403079999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Compose Email">
-                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="emaliButtonPressed:" destination="DdI-sE-j0H" eventType="touchUpInside" id="hWM-Ef-4gI"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Kjh-uH-Fzg">
-                                <rect key="frame" x="10" y="259" width="394" height="637"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="separatorColor" name="AccentColor"/>
-                                <color key="sectionIndexColor" red="0.82580369710000001" green="0.45165193079999999" blue="0.38442403079999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="sectionIndexBackgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="sectionIndexTrackingBackgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <view key="tableHeaderView" contentMode="scaleToFill" id="xzt-LI-slc">
-                                    <rect key="frame" x="0.0" y="0.0" width="394" height="40"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5B-aC-AOH">
-                                            <rect key="frame" x="154" y="-2" width="83" height="44"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="a7K-Xf-uGo">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Hours Completed = x" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qlX-Gl-gjZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="32.5"/>
+                                        <color key="backgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.82580369710000001" green="0.45165193079999999" blue="0.38442403079999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                        <color key="textColor" red="0.82580369710000001" green="0.45165193079999999" blue="0.38442403079999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNM-nV-Kx1">
+                                        <rect key="frame" x="0.0" y="57.5" width="414" height="66"/>
+                                        <color key="backgroundColor" red="0.98023194069999997" green="0.88734507559999998" blue="0.68666714429999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.82580369710000001" green="0.45165193079999999" blue="0.38442403079999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Compose Email">
+                                            <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="emaliButtonPressed:" destination="DdI-sE-j0H" eventType="touchUpInside" id="hWM-Ef-4gI"/>
+                                        </connections>
+                                    </button>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Kjh-uH-Fzg">
+                                        <rect key="frame" x="0.0" y="148.5" width="414" height="621.5"/>
+                                        <color key="backgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="750" constant="641" id="GqA-06-obv"/>
+                                        </constraints>
+                                        <color key="separatorColor" name="AccentColor"/>
+                                        <color key="sectionIndexColor" red="0.82580369710000001" green="0.45165193079999999" blue="0.38442403079999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="sectionIndexBackgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="sectionIndexTrackingBackgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <view key="tableHeaderView" contentMode="scaleToFill" id="xzt-LI-slc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                            <color key="textColor" red="0.82580369710000001" green="0.45165193079999999" blue="0.38442403079999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <nil key="highlightedColor"/>
-                                            <color key="shadowColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Work Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTg-L4-Y41">
-                                            <rect key="frame" x="237" y="-2" width="177" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                            <color key="textColor" red="0.82580369710000001" green="0.45165193079999999" blue="0.38442403079999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <nil key="highlightedColor"/>
-                                            <color key="shadowColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="      Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlX-nT-nr7">
-                                            <rect key="frame" x="0.0" y="-2" width="155" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                            <color key="textColor" red="0.82580369710000001" green="0.45165193079999999" blue="0.38442403079999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <nil key="highlightedColor"/>
-                                            <color key="shadowColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </view>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DMLcell" rowHeight="44" id="HWJ-nc-hW2" customClass="DMLcell" customModule="GS_Award_Tracker" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="90" width="394" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HWJ-nc-hW2" id="Sqr-BU-Dcd">
-                                            <rect key="frame" x="0.0" y="0.0" width="394" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="      Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8n-gd-zUL">
-                                                    <rect key="frame" x="0.0" y="0.0" width="162" height="44"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5B-aC-AOH">
+                                                    <rect key="frame" x="154" y="-2" width="83" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
@@ -308,8 +283,8 @@
                                                     <nil key="highlightedColor"/>
                                                     <color key="shadowColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38F-Bw-aSU">
-                                                    <rect key="frame" x="158" y="0.0" width="83" height="44"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Work Log" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTg-L4-Y41">
+                                                    <rect key="frame" x="237" y="-2" width="177" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
@@ -317,8 +292,8 @@
                                                     <nil key="highlightedColor"/>
                                                     <color key="shadowColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIP-ZB-dmo">
-                                                    <rect key="frame" x="236" y="-13" width="526" height="69"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="      Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlX-nT-nr7">
+                                                    <rect key="frame" x="0.0" y="-2" width="155" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
@@ -328,28 +303,65 @@
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="dateLabel" destination="K8n-gd-zUL" id="dkA-zT-19Y"/>
-                                            <outlet property="logLabel" destination="EIP-ZB-dmo" id="WnT-Qs-Skf"/>
-                                            <outlet property="minLabel" destination="38F-Bw-aSU" id="Mff-eD-ZzI"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hours Completed = x" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlX-Gl-gjZ">
-                                <rect key="frame" x="45" y="98" width="324" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" red="0.82580369710000001" green="0.45165193079999999" blue="0.38442403079999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
-                                <color key="textColor" red="0.82580369710000001" green="0.45165193079999999" blue="0.38442403079999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                        </view>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DMLcell" rowHeight="44" id="HWJ-nc-hW2" customClass="DMLcell" customModule="GS_Award_Tracker" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="90" width="414" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HWJ-nc-hW2" id="Sqr-BU-Dcd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="      Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8n-gd-zUL">
+                                                            <rect key="frame" x="0.0" y="0.0" width="162" height="44"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                            <color key="textColor" red="0.82580369710000001" green="0.45165193079999999" blue="0.38442403079999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <color key="shadowColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38F-Bw-aSU">
+                                                            <rect key="frame" x="158" y="0.0" width="83" height="44"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                            <color key="textColor" red="0.82580369710000001" green="0.45165193079999999" blue="0.38442403079999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <color key="shadowColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIP-ZB-dmo">
+                                                            <rect key="frame" x="236" y="-13" width="526" height="69"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                            <color key="textColor" red="0.82580369710000001" green="0.45165193079999999" blue="0.38442403079999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <color key="shadowColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="dateLabel" destination="K8n-gd-zUL" id="dkA-zT-19Y"/>
+                                                    <outlet property="logLabel" destination="EIP-ZB-dmo" id="WnT-Qs-Skf"/>
+                                                    <outlet property="minLabel" destination="38F-Bw-aSU" id="Mff-eD-ZzI"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fql-k3-byK"/>
                         <color key="backgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="a7K-Xf-uGo" firstAttribute="leading" secondItem="Fql-k3-byK" secondAttribute="leading" id="6Qb-ay-ans"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="a7K-Xf-uGo" secondAttribute="bottom" id="MyJ-ku-qn6"/>
+                            <constraint firstItem="a7K-Xf-uGo" firstAttribute="trailing" secondItem="Fql-k3-byK" secondAttribute="trailing" id="gmH-VK-eu2"/>
+                            <constraint firstItem="a7K-Xf-uGo" firstAttribute="top" secondItem="Fql-k3-byK" secondAttribute="top" id="xMj-dP-V0l"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="j4c-bx-WhW"/>
                     <connections>
