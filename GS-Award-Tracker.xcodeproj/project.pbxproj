@@ -485,6 +485,7 @@
 				DEVELOPMENT_TEAM = MZTYS99T33;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "GS-Award-Tracker/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Track It All";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -515,6 +516,7 @@
 				DEVELOPMENT_TEAM = MZTYS99T33;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "GS-Award-Tracker/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Track It All";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
