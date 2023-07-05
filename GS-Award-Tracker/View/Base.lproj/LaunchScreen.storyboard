@@ -20,19 +20,19 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track It All" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0l-cH-RU4">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="155.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="127"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="60"/>
-                                        <color key="textColor" red="0.82580369710000001" green="0.45165193079999999" blue="0.38442403079999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" red="0.61004555230000002" green="0.75340884919999995" blue="0.65508234499999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="bPv-cl-QFj">
-                                        <rect key="frame" x="0.0" y="202.33333333333331" width="393" height="556.66666666666674"/>
+                                        <rect key="frame" x="0.0" y="174" width="393" height="585"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.85375803709999998" green="0.88639521600000004" blue="0.86278516049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="icn-ki-hHK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GeT-sn-ezz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="icn-ki-hHK" secondAttribute="trailing" id="HaA-qj-u9k"/>
@@ -47,6 +47,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="256" height="256"/>
+        <image name="Image" width="341.33334350585938" height="341.33334350585938"/>
     </resources>
 </document>
