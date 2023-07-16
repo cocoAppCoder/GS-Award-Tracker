@@ -18,7 +18,6 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var myTableView: UITableView!
     @IBOutlet weak var hoursCompletedLabel: UILabel!
-    @IBOutlet weak var enterEmailTextField: UITextField!
     
     //refrence to managed object context
     let dmlContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
