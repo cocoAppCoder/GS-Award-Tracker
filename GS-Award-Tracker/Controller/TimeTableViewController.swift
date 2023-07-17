@@ -9,7 +9,7 @@ class TimeTableViewController : UIViewController {
     @IBOutlet weak var invalidDateLabel: UILabel!
     @IBOutlet weak var minutesEntry: UITextField!
     @IBOutlet weak var invalidTimeLabel: UILabel!
-    @IBOutlet weak var workDescription: UITextField!
+    @IBOutlet weak var workDescription: UITextView!
     @IBOutlet weak var invalidDescpritionLabel: UILabel!
     
     
@@ -105,6 +105,13 @@ class TimeTableViewController : UIViewController {
         super.viewDidLoad()
         
         initializeHideKeyboard()
+        
+        workDescription.layer.borderWidth = 1.0
+        workDescription.layer.borderColor = UIColor.lightGray.cgColor
+        minutesEntry.layer.borderWidth = 1.0
+        minutesEntry.layer.borderColor = UIColor.lightGray.cgColor
+        workDateEntered.layer.borderWidth=1.0
+        workDateEntered.layer.borderColor = UIColor.lightGray.cgColor
         
         let startTimePicker = UIDatePicker()
         startTimePicker.datePickerMode = .date//AndTime
