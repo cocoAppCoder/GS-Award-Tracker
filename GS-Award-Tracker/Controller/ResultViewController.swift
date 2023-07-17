@@ -38,7 +38,7 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
       
-        
+    
     
         
         myTableView.dataSource = self
